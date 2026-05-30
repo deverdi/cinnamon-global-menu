@@ -1,43 +1,27 @@
-# Global Menu — Cinnamon Applet
+# 🌐 Global Menu — Cinnamon Applet
 
-GTK/Qt uygulamalarının menü çubuğunu Cinnamon panelinde göstermek için kompakt bir global-menu applet'i.
+Cinnamon masaüstü ortamı için geliştirilmiş, aktif pencerenin menü çubuğunu (File, Edit, View vb.) doğrudan panele taşıyan kompakt ve modern bir **Global Menu** uygulamacığıdır.
 
-AppMenu Registrar üzerinden uygulamaların kendi menülerini (DBusMenu / GTK Menus) panele taşır.
-
-## Özellikler
-
-- **Uygulama menüleri** — Odaktaki uygulamanın menü çubuğunu panelde gösterir (File, Edit, View vb.)
-- **Sistem menüsü** — Panel üzerinden Hakkında, Ayarlar, Kilit, Kapat gibi sistem işlemlerine hızlı erişim
-- **Pencere kontrolleri** — Tam ekran, simge durumuna küçült, büyüt, kapat
-- **Son öğeler** — Son kullanılan uygulama ve belgelere hızlı erişim
-- **Uygulama adı özelleştirme** — WM sınıfına göre gösterilen uygulama adını değiştirebilme
-
-## Gereksinimler
-
-```bash
-sudo apt install appmenu-registrar appmenu-gtk3-module appmenu-gtk2-module
-```
-
-GTK menülerin dışa aktarılması için `~/.config/environment.d/80-appmenu.conf`:
-
-```text
-GTK_MODULES=appmenu-gtk-module
-UBUNTU_MENUPROXY=1
-```
-
-## Kurulum
-
-```bash
-git clone https://github.com/deverdi/global-menu cinnamon-applet
-cp -r global-menu@deverdi ~/.local/share/cinnamon/applets/
-```
-
-Ardından Cinnamon'u yeniden başlatın (Alt+F2 → `r`). Applet'i panele eklemek için Panel Ayarları → Uygulamacıklar → Global Menu.
-
-## Lisans
-
-Bu proje [GNU General Public License v3.0](LICENSE) ile lisanslanmıştır.
+Bu applet, **AppMenu Registrar** aracılığıyla uygulamaların DBusMenu veya GTK Menus protokolleri üzerinden dışa aktardığı menüleri yakalar ve Cinnamon panelinizde şık bir şekilde listeler.
 
 ---
 
-© 2026 deverdi — Tüm hakları saklıdır.
+## ✨ Özellikler
+
+*   **💻 Dinamik Uygulama Menüleri:** Odaktaki uygulamanın menü çubuğunu (Dosya, Düzenle, Görünüm vb.) panelde gösterir.
+*   **⚙️ Sistem Menüsü:** Panel üzerinden Hakkında, Ayarlar, Ekranı Kilitle ve Kapat gibi sistem işlemlerine hızlı erişim sağlar.
+*   **🪟 Pencere Kontrolleri:** Aktif pencereyi tam ekran yapma, simge durumuna küçültme, büyütme ve kapatma butonları.
+*   **⏳ Son Öğeler:** Son kullanılan uygulamalara ve belgelere hızlıca göz atın ve açın.
+*   **✏️ Uygulama Adı Özelleştirme:** WM sınıfına (WM_CLASS) göre panelde gösterilen uygulama adlarını dilediğiniz gibi maskeleyin veya değiştirin.
+
+---
+
+## 🚀 Gereksinimler & Ön Hazırlık
+
+Menülerin panele doğru şekilde aktarılabilmesi için sisteminizde gerekli modüllerin kurulu olması gerekir.
+
+### 1. Gerekli Paketlerin Kurulumu
+Terminali açın ve aşağıdaki komutu çalıştırarak gerekli bağımlılıkları yükleyin:
+
+```bash
+sudo apt install appmenu-registrar appmenu-gtk3-module appmenu-gtk2-module
