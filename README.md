@@ -1,11 +1,11 @@
-<p align="center">
+markdown_content = """<p align="center">
   <a href="#-tr-türkçe">🇹🇷 Türkçe</a> • 
   <a href="#-en-english">🇺🇸 English</a>
 </p>
 
 ---
 
-# 🇹🇷 TR: Türkçe
+# <a name="-tr-türkçe"></a>🇹🇷 TR: Türkçe
 
 ## 🌐 Global Menu — Cinnamon Applet
 
@@ -23,11 +23,11 @@ Bu applet, **AppMenu Registrar** aracılığıyla uygulamaların DBusMenu veya G
 
 ### ✨ Özellikler
 
-*   **💻 Dinamik Uygulama Menüleri:** Odaktaki uygulamanın menü çubuğunu (Dosya, Düzenle, Görünüm vb.) panelde gösterir.
-*   **⚙️ Sistem Menüsü:** Panel üzerinden Hakkında, Ayarlar, Ekranı Kilitle ve Kapat gibi sistem işlemlerine hızlı erişim sağlar.
-*   **🪟 Pencere Kontrolleri:** Aktif pencereyi tam ekran yapma, simge durumuna küçültme, büyütme ve kapatma butonları.
-*   **⏳ Son Öğeler:** Son kullanılan uygulamalara ve belgelere hızlıca göz atın ve açın.
-*   **✏️ Uygulama Adı Özelleştirme:** WM sınıfına (WM_CLASS) göre panelde gösterilen uygulama adlarını dilediğiniz gibi maskeleyin veya değiştirin.
+* **💻 Dinamik Uygulama Menüleri:** Odaktaki uygulamanın menü çubuğunu (Dosya, Düzenle, Görünüm vb.) panelde gösterir.
+* **⚙️ Sistem Menüsü:** Panel üzerinden Hakkında, Ayarlar, Ekranı Kilitle ve Kapat gibi sistem işlemlerine hızlı erişim sağlar.
+* **🪟 Pencere Kontrolleri:** Aktif pencereyi tam ekran yapma, simge durumuna küçültme, büyütme ve kapatma butonları.
+* **⏳ Son Öğeler:** Son kullanılan uygulamalara ve belgelere hızlıca göz atın ve açın.
+* **✏️ Uygulama Adı Özelleştirme:** WM sınıfına (WM_CLASS) göre panelde gösterilen uygulama adlarını dilediğiniz gibi maskeleyin veya değiştirin.
 
 ---
 
@@ -36,5 +36,3 @@ Bu applet, **AppMenu Registrar** aracılığıyla uygulamaların DBusMenu veya G
 Menülerin panele doğru şekilde aktarılabilmesi için sisteminizde gerekli modüllerin kurulu olması gerekir.
 
 #### 1. Gerekli Paketlerin Kurulumu
-```bash
-sudo apt install appmenu-registrar appmenu-gtk3-module appmenu-gtk2-module
