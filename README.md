@@ -16,7 +16,7 @@ Moves the focused application's menu bar into the panel — clean, minimal, alwa
 ---
 
 ## Screenshot / Ekran Görüntüsü
-`![Global Menu in action](preview.png)`
+`![Global Menu in action](/preview.png)`
 ---
 
 ## Features / Özellikler
