@@ -20,16 +20,6 @@ Moves the focused application's menu bar into the panel — clean, minimal, alwa
 > **Tip:** Replace the placeholder below with an actual screenshot of your panel.  
 > `![Global Menu in action](screenshots/preview.png)`
 
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│  🐧  Firefox   File   Edit   View   History   Bookmarks   Tools     │
-└─────────────────────────────────────────────────────────────────────┘
-         ↑           ↑    └──────────────── dynamicBox ───────────────┘
-    systemButton  appButton
-```
-
-*The panel shows the system logo, the focused app's name, and its full menu bar — all in one row.*
-
 ---
 
 ## Features / Özellikler
