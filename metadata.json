@@ -1,0 +1,7 @@
+{
+  "uuid": "global-menu@deverdi",
+  "name": "Global Menu",
+  "description": "A compact global-menu style applet for Cinnamon's top panel.",
+  "icon": "preferences-desktop-theme",
+  "max-instances": 1
+}

@@ -1,0 +1,203 @@
+{
+  "show-system-menu": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show system menu"
+  },
+  "system-menu-logo": {
+    "type": "combobox",
+    "default": "distributor",
+    "description": "System menu logo",
+    "options": {
+      "Distributor icon": "distributor",
+      "Linux Mint icon": "mint",
+      "Cinnamon icon": "cinnamon",
+      "Text": "text"
+    }
+  },
+  "system-menu-logo-size": {
+    "type": "spinbutton",
+    "default": 16,
+    "min": 10,
+    "max": 28,
+    "step": 1,
+    "units": "px",
+    "description": "System menu logo size"
+  },
+  "app-name-overrides": {
+    "type": "list",
+    "description": "Displayed application name overrides",
+    "columns": [
+      {
+        "id": "match",
+        "title": "WM class / instance contains",
+        "type": "string"
+      },
+      {
+        "id": "name",
+        "title": "Displayed name",
+        "type": "string"
+      }
+    ],
+    "default": []
+  },
+  "system-menu-items": {
+    "type": "list",
+    "description": "System menu items and scripts",
+    "columns": [
+      {
+        "id": "separator",
+        "title": "Separator",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "id": "label",
+        "title": "Label",
+        "type": "string"
+      },
+      {
+        "id": "icon",
+        "title": "Icon",
+        "type": "icon"
+      },
+      {
+        "id": "action",
+        "title": "Built-in action",
+        "type": "string"
+      },
+      {
+        "id": "command",
+        "title": "Command / script",
+        "type": "string"
+      }
+    ],
+    "default": [
+      {
+        "separator": false,
+        "label": "About This Computer",
+        "icon": "xsi-dialog-information",
+        "action": "about",
+        "command": ""
+      },
+      {
+        "separator": true,
+        "label": "",
+        "icon": "",
+        "action": "",
+        "command": ""
+      },
+      {
+        "separator": false,
+        "label": "System Settings...",
+        "icon": "xsi-preferences",
+        "action": "settings",
+        "command": ""
+      },
+      {
+        "separator": false,
+        "label": "App Store...",
+        "icon": "mintinstall",
+        "action": "appstore",
+        "command": ""
+      },
+      {
+        "separator": true,
+        "label": "",
+        "icon": "",
+        "action": "",
+        "command": ""
+      },
+      {
+        "separator": false,
+        "label": "Recent Items",
+        "icon": "",
+        "action": "recent",
+        "command": ""
+      },
+      {
+        "separator": true,
+        "label": "",
+        "icon": "",
+        "action": "",
+        "command": ""
+      },
+      {
+        "separator": false,
+        "label": "Force Quit...",
+        "icon": "xsi-window-close-symbolic",
+        "action": "forcequit",
+        "command": ""
+      },
+      {
+        "separator": true,
+        "label": "",
+        "icon": "",
+        "action": "",
+        "command": ""
+      },
+      {
+        "separator": false,
+        "label": "Sleep",
+        "icon": "xsi-system-suspend",
+        "action": "sleep",
+        "command": ""
+      },
+      {
+        "separator": false,
+        "label": "Restart...",
+        "icon": "xsi-view-refresh",
+        "action": "restart",
+        "command": ""
+      },
+      {
+        "separator": false,
+        "label": "Shut Down...",
+        "icon": "xsi-shutdown",
+        "action": "shutdown",
+        "command": ""
+      },
+      {
+        "separator": true,
+        "label": "",
+        "icon": "",
+        "action": "",
+        "command": ""
+      },
+      {
+        "separator": false,
+        "label": "Lock Screen",
+        "icon": "xsi-lock-screen",
+        "action": "lock",
+        "command": ""
+      },
+      {
+        "separator": false,
+        "label": "Log Out...",
+        "icon": "xsi-log-out",
+        "action": "logout",
+        "command": ""
+      }
+    ]
+  },
+  "show-window-title": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show focused window title"
+  },
+  "show-no-exported-menu": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show \"No exported menu\" warning",
+    "tooltip": "Turn this off to hide the panel warning when the focused app does not export a global menu."
+  },
+  "menu-width": {
+    "type": "spinbutton",
+    "default": 560,
+    "min": 240,
+    "max": 1200,
+    "step": 10,
+    "units": "px",
+    "description": "Applet width"
+  }
+}

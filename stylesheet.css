@@ -1,0 +1,91 @@
+.global-menu {
+    spacing: 8px;
+    padding: 0 8px;
+    color: #f7f8fa;
+    font-size: 12px;
+    font-weight: 600;
+    min-width: 0;
+}
+
+.global-menu:hover,
+.global-menu:active,
+.global-menu:focus,
+.global-menu:checked {
+    spacing: 8px;
+    padding: 0 8px;
+}
+
+.global-menu-item {
+    border-radius: 6px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.global-menu-item:hover,
+.global-menu-item:active,
+.global-menu-item:focus,
+.global-menu-item:checked {
+    background-color: rgba(255,255,255,0.16);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.global-menu-item:insensitive {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.global-menu-app {
+    font-weight: 700;
+}
+
+.global-menu-system {
+    padding: 0;
+}
+
+.global-menu-system-symbol {
+    font-weight: 700;
+}
+
+.global-menu-static {
+    spacing: 2px;
+    padding: 0;
+}
+
+.global-menu-static:hover,
+.global-menu-static:active,
+.global-menu-static:focus,
+.global-menu-static:checked {
+    spacing: 2px;
+    padding: 0;
+}
+
+.global-menu-dynamic {
+    spacing: 2px;
+    padding: 0;
+}
+
+.global-menu-dynamic:hover,
+.global-menu-dynamic:active,
+.global-menu-dynamic:focus,
+.global-menu-dynamic:checked {
+    spacing: 2px;
+    padding: 0;
+}
+
+.global-menu-heading {
+    color: rgba(247,248,250,0.92);
+}
+
+.global-menu-title-clip {
+    min-width: 0;
+}
+
+.global-menu-title {
+    color: rgba(247,248,250,0.66);
+    font-weight: 500;
+    padding-left: 4px;
+}
